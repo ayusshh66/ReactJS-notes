@@ -16,6 +16,7 @@ function customRendor(reactElement,mainContainer){
         if( key === "children") continue;
         domElement.setAttribute(key, reactElement.props[key]);
 
+
         
         
     }
