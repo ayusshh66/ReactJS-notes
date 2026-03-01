@@ -5,10 +5,9 @@ import './App.css'
 
 function App() {
   
-  // let removed  =     setremoveValue( CounterValue = CounterValue - 1)
+  // let removed  = setremoveValue( CounterValue = CounterValue - 1)
 
 
-  // this should be a variable to be functioned rather than assigning it as a constant
   let [removeValue, setremoveValue] = useState(0)
 
   let [currentValue, setcurrentValue] =  useState(0)
