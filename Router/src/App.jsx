@@ -11,6 +11,9 @@ import {Routes , Route} from 'react-router-dom'
 import ContactLayouts from './layouts/ContactLayouts'
 import ContactInfo from './Components/ContactInfo'
 import ConactForm from './Components/ContactForm'
+import Error from './Components/Error'
+import User from './Components/User'
+import Chai, { gitHubInfoLoader } from './Components/Chai'
 
 
 
@@ -32,8 +35,15 @@ function App() {
         <Route path='/contact' element = {<ContactLayouts/>} >
          <Route path  = 'info' element = {<ContactInfo/ >}/>
          <Route path = "form" element = {<ConactForm/>}/>
+         <Route path = 'user/:userid' element = {<User/>}/>
 
         </Route>
+        <Route path='*' element = {<Error/>}/>
+        <Route 
+  loader={gitHubInfoLoader} 
+  path='/chai' 
+  element={<Chai/>}
+/>
         </Routes>
       </div>
     

@@ -10,7 +10,7 @@ const navigate = useNavigate()
 
 
     <div className='flex justify-around mt-10'>
-        <img src={signal} alt="signal" width={60} className='h-10'/>
+        <img src={signal} alt="signal" width={60} className='h-10 cursor-pointer' onClick={() => navigate('/')} />
         <div className="ul">
         <ul className='flex gap-x-13 bg-gray-300 rounded-4xl w-[600px] justify-center items-center shadow shadow-black shadow-md '>
            <NavLink to='/' className={({isActive}) => isActive?"text-black-600 font-bold":""}> <li>Home</li></NavLink>
