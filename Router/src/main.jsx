@@ -17,7 +17,7 @@ import Followers, {githubInfoLoader} from './components/Followers/Followers.jsx'
 
 
 // const router = createBrowserRouter([{
-//   path : '/',
+//   path : '/', 
 //   element : <Layout/>,
 //   children : [{
 //     path : "",

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Outlet} from 'react-router-dom'
-import Header from './components/header/header'
-import Footer from './components/footer/footer'
+import Header from '../src/components/Header/Header'
+import Followers from './components/Followers/Followers'
 
 function Layout() {
   return (
@@ -15,5 +15,5 @@ function Layout() {
     
   )
 }
-
+// dw
 export default Layout
