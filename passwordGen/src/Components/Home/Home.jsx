@@ -1,8 +1,24 @@
 import React from 'react'
+import Editor from "@monaco-editor/react";
+import { useState } from "react";
+
+
 
 function Home() {
+  const [code, setCode] = useState("");
   return (
-    <div>Home</div>
+     <div>
+      <Editor
+        height="400px"
+        defaultLanguage="python"
+        onChange={(value) => setCode(value || "")}
+      />
+
+      <button onClick={() => console.log(code)}>
+        Run Code
+      </button>
+    </div>
+    
   )
 }
 
