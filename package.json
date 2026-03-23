@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "@tailwindcss/vite": "^4.2.2",
+    "ace-builds": "^1.43.6",
+    "react-ace": "^14.0.1",
     "react-router-dom": "^7.13.1",
     "tailwindcss": "^4.2.2"
   }

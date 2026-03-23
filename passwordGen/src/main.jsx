@@ -4,9 +4,10 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter,BrowserRouter,RouterProvider,createRoutesFromElements, Route } from 'react-router-dom'
 import Layout from './Layout.jsx'
-import Home from './Components/Home/Home.jsx'
+// import Home from './Components/Home/Home.jsx'
 import About from './Components/About/About.jsx'
 import Password from './Components/Login/Password.jsx'
+// import CodeEditor from './Components/CodeEditor.jsx'
 
 
 
@@ -17,9 +18,10 @@ import Password from './Components/Login/Password.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
-      <Route path='' element={<Home/>}   />
+      {/* <Route path='' element={<Home/>}   /> */}
       <Route path = 'about' element = {<About/>}/>
       <Route path = 'password' element = {<Password/>}/>
+      {/* <Route path = 'code' element = {}/> */}
 
 
 
